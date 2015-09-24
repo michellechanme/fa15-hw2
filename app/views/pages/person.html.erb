@@ -1,0 +1,12 @@
+<% if params[:name].blank? %>
+  <%= @age %>
+<% else %>
+  <p>Name</p>
+  <%= "#{params[:name]}" %>
+
+  <p>Age</p>
+  <%= "#{params[:age]}" %>
+
+  <p>Nickname</p>
+  <%= @nickname %>
+<% end %>

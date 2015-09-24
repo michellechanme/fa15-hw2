@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
-    # foo = Foobar.new "baz"
-    # @baz = foo.bar :cat, sat: :dat, dat: :sat
+     foo = Foobar.new "baz"
+     @baz = foo.bar(:cat, dat: :sat, sat: :dat)
   end
 
   def stringify
@@ -9,8 +9,10 @@ class PagesController < ApplicationController
   end
 
   def age
+    @age_text = "You are not a person!"
   end
 
   def person
+    @person_text = "person method is being called!"
   end
 end
